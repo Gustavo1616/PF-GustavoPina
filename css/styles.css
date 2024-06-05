@@ -93,6 +93,19 @@ p, h1, h2, h3 {
 a{
     text-decoration: none;
 }
+
+@media screen and (320px <= width <= 480px) {
+    body {
+        background-size: cover;
+        overflow: hidden;
+    }
+    nav ul li a {
+        display: inline ;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
         /* HOME/INDEX */
 
 .main .titulo-principal{
@@ -155,14 +168,7 @@ a{
     flex-direction: row;
 }
 
-@media (max-whidth:700px){
-    header{
-        flex-direction: column;
-    }
-    nav{
-        padding: 10px 0px;
-    }
-}
+
        /* SOBRE NOSOTROS */
 .foto{
     max-width: 320px;
