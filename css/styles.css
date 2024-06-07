@@ -194,10 +194,6 @@ a{
     background-size: cover;
     border-radius: 15px;
 }
-.art1 {
-    border: 0;
-    margin: 0;
-}
 #carouselExample {
     width: 800px;
     height: 100%;
@@ -223,7 +219,11 @@ a{
     flex-wrap: nowrap;
     flex-direction: row;
 }
-
+@media (max-width:780px) and (min-width:1040px){
+    .art1 {
+        max-width: 100dvh;
+    }
+}
 
        /* SOBRE NOSOTROS */
 .foto{
@@ -317,7 +317,7 @@ a{
 }
 @media (min-width:320px) and (max-width:480px){
     .info, .infoadicional {
-        min-width: 300px;
+        max-width: 100dvh;
     }
     .video {
         width: auto;
@@ -326,7 +326,7 @@ a{
 
 @media (min-width: 481px) and (max-width:759px){
     .info, .infoadicional {
-        min-width: 300px;
+        max-width: 100dvh;
     }
     .video {
         width:auto;
