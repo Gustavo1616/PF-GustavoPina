@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: "font principal";
     src: url(../assets/font/Roboto-Regular.ttf);
 }
@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-rendering: optimizeSpeed;
 }
 body{
     font-family: "font principal", sans-serif;
@@ -19,6 +18,8 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
     background-color: #393a44;
+    margin: 0;
+    padding: 0;
 }
 .main{
     position: relative;
@@ -34,7 +35,6 @@ header {
     height: 120px;
     background-color: rgba(0, 0, 0, .2);
 }
-
 
 #footer{
     background-color: rgb(32, 33, 37);
@@ -112,7 +112,7 @@ a{
     }
     header {
         min-width: 100dvh;
-        display: flex
+        display: flex;
         flex-direction: column;
         justify-content: center;
     }
@@ -124,7 +124,7 @@ a{
         align-items: start;
     }
     header {
-        min-width: 100dvh;
+        max-width: 100dvh;
         display: flex;
         justify-content: flex-end;
     }
@@ -137,9 +137,6 @@ a{
     }
 }
 @media (max-width:480px) {
-    body {
-        max-width: 100dvh;
-    }
     .main {
         align-items: center;
         max-width: 100vh;
@@ -154,7 +151,7 @@ a{
         align-items: start;
     }
     header {
-        min-width: 100dvh;
+        max-width: 100dvh;
         display: flex;
         justify-content: flex-end;
     }
@@ -344,6 +341,27 @@ a{
      /* GALERIA */
 .columna img {
     width: 100%;
+}
+
+.galeria {
+    display: flex;
+    padding: 5px;
+}
+
+.columna {
+    flex: 25%;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.columna img {
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .columna {
+        flex: 100%;
+    }
 }
      /* CONTACTO */
 .contenedor3{
