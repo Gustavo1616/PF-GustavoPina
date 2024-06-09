@@ -84,68 +84,95 @@ a{
 .btn-group {
     display: none;
 }
-
-@media (max-width: 1040px) {
-    .main {
-        flex-direction: column;
-        min-width: 100dvh;
-        align-items: center;
-        padding: 300px;
-    }
-    .btn-group {
-        display: none;
-    }
-    .nav{
-        display: flex;
-        align-items: center;
+.logoMobile {
+    display: none;
+}
+@media (min-width:320px) and (max-width:740px) {
+    body {
+        max-width: 100%;
     }
     header {
-        min-width: 100dvh;
         display: flex;
-        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .main {
+        max-width: 100%;
+    }
+    .logoMobile {
+        display: inline-flex;
+        flex-wrap: nowrap;
         justify-content: center;
     }
-    .btn-group {
-        display: inline-flex;
+    .logoMobile img {
+        max-width: 100%;
+        border-radius: 50%;
     }
-    .nav {
+
+    .titulo-principal .logo {
         display: none;
-        align-items: start;
     }
-    header {
-        max-width: 100dvh;
+    .btn-group {
         display: flex;
-        justify-content: flex-end;
     }
     .dropdown-menu {
-        background-color: rgba(0, 0, 0, .4);
-        
+        background-color: rgba(0, 0, 0, 0.4);
     }
     .dropdown-item {
-       color: #f9bc60;
+        color: tan;
+    }
+    .nav{
+        display: none;
+        text-align: center;
+        flex-direction: column;
+    }
+    #carouselExample {
+        max-width: 100%;
+    }
+
+    .titulo-principal {
+        flex-direction: column;
     }
 }
-@media (max-width:480px) {
-    .main {
-        align-items: center;
-        max-width: 100vh;
-        padding: 300px;
-    }
-   
-    .btn-group {
-        display: inline-flex;
-    }
-    .nav {
-        display: none;
-        align-items: start;
+
+@media (min-width:741px) and (max-width:1040px) {
+    body {
+        max-width: 100%;
     }
     header {
-        max-width: 100dvh;
         display: flex;
         justify-content: flex-end;
     }
+    .main {
+        max-width: 100%;
+    }
+    .logoMobile {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .logoMobile img {
+        max-width: 100%;
+        border-radius: 50%;
+    }
+
+    .titulo-principal .logo {
+        display: none;
+    }
+    .btn-group {
+        display: flex;
+    }
     .dropdown-menu {
-        background-color: rgba(0, 0, 0, .4);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .dropdown-item {
+        color: tan;
+    }
+    .nav{
+        display: none;
+        align-items: center;
+    }
+    #carouselExample {
+        max-width: 100%;
     }
 }
         /* HOME/INDEX */
@@ -176,7 +203,7 @@ a{
     background-color: rgba(0, 0, 0, .8);
     text-align: center;
     padding: 40px 40px;
-    border-radius: 50px;
+    border-radius: 25px;
     display: inline-flex;
     flex-direction: column;
     margin-bottom: auto;
@@ -192,7 +219,7 @@ a{
     width: 800px;
     height: 100%;
     overflow: hidden;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
        /* SOBRE NOSOTROS */
 .master-box {
@@ -204,6 +231,7 @@ a{
 }
 .post {
     background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 20px;
 }
 .text-box h2 {
     font-size: 42px;
@@ -221,6 +249,19 @@ a{
     border: 3px solid #fff;
     border-radius: 10px;
     margin-right: 15px;
+}
+
+@media (max-width:768px) {
+    .master-box {
+        min-width: 100%;
+    }
+    .post {
+        min-width: 100%;
+    }
+
+    .post img {
+        width: 100%;
+    }
 }
          /* INFORMACION */
 .titulo-info{
@@ -352,7 +393,6 @@ a{
 .contenedor5 {
     display: flex;
     justify-items: center;
-    max-height: 100dvh;
     margin-bottom: auto;
 }
 .form-content{
@@ -403,4 +443,27 @@ input::placeholder, textarea::placeholder{
 }
 .btn:hover{
     background-color: #219bf9;
+}
+
+@media (min-width:320px) and (max-width:768px) {
+    .contenedor5 {
+        min-width: 100%;
+        flex-wrap: nowrap
+        align-items: center;
+        background: none;
+        
+    }
+    .contenedor4 {
+        box-shadow: none;
+        background: none;
+        min-width: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+    }
+    .contenedor3 {
+        min-width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
