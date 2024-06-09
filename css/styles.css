@@ -448,10 +448,10 @@ input::placeholder, textarea::placeholder{
 @media (min-width:320px) and (max-width:768px) {
     .contenedor5 {
         min-width: 100%;
-        flex-wrap: nowrap
-        align-items: center;
-        background: none;
-        
+        flex-wrap: nowrap;
+        align-items:center;
+        background:none;
+
     }
     .contenedor4 {
         box-shadow: none;
