@@ -24,10 +24,11 @@ body {
 }
 
 #footer {
+  width: 100%;
   margin-top: auto;
   text-align: center;
   padding: 10px 0;
-  background: linear-gradient(bottom, red, blue);
+  background-color: rgba(32, 33, 37, 0.8);
 }
 
 nav ul li a {
@@ -67,6 +68,7 @@ header nav ul li {
 }
 header nav ul li a:hover {
   background-color: rgba(131, 131, 131, 0.541);
+  transform: scale(1.05);
 }
 
 p, h1, h2, h3, dt, dl {
@@ -210,6 +212,9 @@ a {
   width: 100px;
   border-radius: 50%;
 }
+.main .titulo-principal .logo {
+  padding-left: 30px;
+}
 
 /* SOBRE NOSOTROS */
 .master-box {
@@ -261,11 +266,9 @@ a {
 .maxconteiner .titulo-info {
   background-color: black;
   border-radius: 30px 30px 0 0;
-  padding-bottom: 30px;
 }
 .maxconteiner .titulo-infoAdi {
   background-color: black;
-  padding-bottom: 30px;
 }
 .maxconteiner .info {
   background-color: rgba(0, 0, 0, 0.63);
