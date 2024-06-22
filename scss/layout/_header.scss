@@ -1,0 +1,53 @@
+@import "../utilities/mixins";
+@include MobileHeader;
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-family: "font principal" ,sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 25px;
+    transition: all ease 0.5s;
+  }
+  
+  div h1, p {
+    text-align: center;
+  }
+  header {
+    width: auto;
+    height: 120px;
+    background-color: rgba(0, 0, 0, .2);
+  nav {
+    align-items: center;
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    ul {
+      text-align: center;
+  
+      li {
+        list-style: none;
+        display: inline-block;
+  
+        a:hover {
+          background-color: rgba(131, 131, 131, 0.541);
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+} 
+  p, h1, h2, h3, dt, dl {
+    color: $color-base;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .btn-group, .logoMobile {
+    display: none;
+  }

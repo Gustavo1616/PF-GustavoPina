@@ -1,0 +1,17 @@
+@include MediaGaleria;
+.galeria {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    margin: auto auto 300px;
+    .columna {
+        flex: 25%;
+        padding: 5px;
+        flex-wrap: wrap;
+      
+        img {
+          margin-top: 5px;
+          width: 100%;
+        }
+    }
+  }

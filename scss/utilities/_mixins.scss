@@ -6,3 +6,213 @@
     background-attachment: fixed;
     background-color: #393a44;
 }
+   // HEADER // 
+@mixin MobileHeader {
+    @media (min-width: 320px) and (max-width: 768px) {
+        header {
+            display: flex;
+            justify-content: flex-end;
+            .btn-group {
+                display: flex;
+                .dropdown-menu {
+                    background-color: rgba(0, 0, 0, 0.4);
+                    .dropdown-item {
+                        color: $color-base;
+                    }
+                }
+            }
+            .nav {
+                display: none;
+                text-align: center;
+                flex-direction: column;
+            }
+            
+        }
+        
+        .main {
+                max-width: 100%;
+        
+                .titulo-principal .logo {
+                    display: none;
+                }
+                .titulo-principal {
+                    flex-direction: column;
+                }
+        }
+        }
+    }
+ // CONTACTO //
+@mixin MediaContacto {
+    @media (min-width: 320px) and (max-width: 768px) {
+        .contenedor5 {
+            flex-wrap: nowrap;
+            align-items: center;
+            background: none;
+            max-width: 100%;
+          .contenedor4 {
+              align-items: center;
+              max-width: 100%;
+          }
+          .contenedor3 {
+              max-width: 100%;
+              font-size: 20px;
+            }
+          }
+    }
+}
+   // GALERIA //
+@mixin MediaGaleria {
+    @media (max-width: 760px) {
+        .columna {
+          flex: 100%;
+        }
+      }
+      
+      @media (max-width: 1024px) {
+        .galeria {
+          min-width: 100%;
+          .columna {
+            flex: 50%;
+        }
+        }
+      }
+}
+   // INFORMACION //
+@mixin InformacionMobile {
+    @media (min-width: 320px) and (max-width: 480px){
+        .maxconteiner {
+            max-width: 100%;
+            .info, .infoadicional {
+              max-width: 100dvh;
+          }
+          .contenedor2 .infoadi .video {
+              min-width: auto;
+          }
+        }
+    }
+}
+@mixin InformacionTablet {
+    @media (min-width: 481px) and (max-width: 759px) {
+        .maxconteiner {
+            max-width: 100%;
+            
+            .info, .infoadicional {
+              max-width: 100dvh;
+          }
+          .contenedor2 .infoadi .video {
+              width: auto;
+          }
+          }
+    }
+}
+
+@mixin InformacionDesktop {
+    @media screen and (min-width: 760px) {
+        .maxconteiner {
+            padding: 0 100px;
+            .info, .infoadicional {
+                min-width: 300px;
+            }
+        .contenedor2 .infoadi .video {
+            width: auto;
+        }
+        }  
+    }
+}
+// SOBRE NOSOTROS //
+@mixin MediaSobreNosotros {
+    @media (max-width: 1024px) {
+        .master-box {
+          min-width: 100%;
+          .post {
+            min-width: 100%;
+            text-align: center;
+        
+            img {
+              width: 100%;
+            }
+        }
+        }
+    }
+}
+
+// GENERAL // 
+
+@mixin GeneralMobile {
+    @media (min-width: 320px) and (max-width: 740px) {
+        body {
+            header {
+                display: flex;
+                justify-content: flex-end;
+                .logoMobile {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    img {
+                      max-width: 100%;
+                      border-radius: 50%;
+                    }
+                }
+            }
+            max-width: 100%;
+          .main {
+            max-width: 100%;
+    
+            .titulo-principal .logo {
+                display: none;
+            }
+            .titulo-principal {
+                flex-direction: column;
+            }
+        }
+        }
+    }  
+        #carouselExample {
+          max-width: 100%;
+        }
+      }
+
+@mixin GeneralTabletandDesktop {
+    @media (min-width: 741px) and (max-width: 1100px) {
+        body {
+          max-width: 100%;
+          header {
+            display: flex;
+            justify-content: flex-end;
+            .logoMobile {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                flex-direction: row;
+                justify-content: space-around;
+                img {
+                  max-width: 100%;
+                  border-radius: 50%;
+                }
+            }
+            .btn-group {
+                display: flex;
+                .dropdown-menu {
+                    background-color: rgba(0, 0, 0, 0.4);
+                    .dropdown-item {
+                        color: $color-base;
+                    }
+                }
+            }
+            .nav {
+                display: none;
+                align-items: center;
+            }
+          }
+          .main {
+            max-width: 100%;
+            .titulo-principal .logo {
+                display: none;
+            }
+            #carouselExample {
+                max-width: 100%;
+            }
+          }
+        }
+      }
+}

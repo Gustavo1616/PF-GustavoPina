@@ -1,0 +1,49 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    .art1 {
+        background-color: $bg-color;
+        text-align: center;
+        padding: 40px 40px;
+        border-radius: 25px;
+        display: inline-flex;
+        flex-direction: column;
+      
+        p {
+          font-size: 20px;
+          background-color: $bg-color;
+          border-radius: 15px;
+          text-transform: uppercase;
+          white-space: pre-line;
+          padding-bottom: 20px;
+        }
+        h3 {
+            padding-bottom: 20px;
+        }
+    }
+    #carouselExample {
+        width: 800px;
+        height: 100%;
+        overflow: hidden;
+        margin-bottom: 100px;
+    }
+    .titulo-principal {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+      
+        img {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+        }
+    .logo {
+      padding-left: 30px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "../utilities/mixins";
+@include MediaContacto;
+.contenedor3 {
+    background-color: $bg-color;
+    text-align: center;
+    border-radius: 25px;
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 40px;
+  
+    h3 {
+      font-size: 40px;
+    }
+  }
+  .contenedor5 {
+    justify-items: center;
+    .contenedor4 {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        width: 500px;
+        text-align: left;
+        label {
+            font-size: 30px;
+            color: black;
+            box-shadow: #393a44;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-align: center;
+        }
+        input {
+            padding: 17px 25px;
+            background-color: #393a44;
+            border: 2px solid #f0faf1;
+            color: #f4f6f9;
+            margin-bottom: 20px;
+            border-radius: 25px;
+            outline: none;
+        }
+        textarea {
+            padding: 17px 25px;
+            background-color: #393a44;
+            border: 2px solid #f0faf1;
+            color: #f4f6f9;
+            margin-bottom: 20px;
+            border-radius: 25px;
+            outline: none;
+            resize: none;
+        }
+        input::placeholder, textarea::placeholder {
+            color: #b5cab6;
+        }
+        .btn {
+            background-color: #b91616;
+            width: 150px;
+            align-self: center;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 25px;
+          
+            &:hover {
+              background-color: #219bf9;
+            }
+        }
+    }
+  }
