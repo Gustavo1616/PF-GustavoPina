@@ -8,7 +8,7 @@ Este proyecto esta pensado para añadir informacion sobre el equipo y del Airsof
 
 
 ## Documentacion
-GitHub: https://github.com/Gustavo1616/PreEntrega3-GustavoPina
+GitHub: https://github.com/Gustavo1616/PF-GustavoPina
 ## Autor
 
 - [Gustavo Piña](https://github.com/Gustavo1616)
