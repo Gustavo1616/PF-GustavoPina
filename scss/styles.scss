@@ -9,14 +9,6 @@
 @import "./views/galeria";
 @import "./views/home";
 @import "./views/sobrenosotros";
-  /* GENERAL */
-  body {
-    @include bg-body;
-    font-family: $font-family;
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    min-height: 100dvh;
-  }
+@import "./layout/body";
 @include GeneralMobile;
 @include GeneralTabletandDesktop;
